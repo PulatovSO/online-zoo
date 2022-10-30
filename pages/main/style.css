@@ -47,6 +47,56 @@
 }
 
 /*=============== HERO ===============*/
+.hero {
+    height: 700px;
+    background-image: url('../../assets/images/hero.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 -82px;
+}
+
+.hero__container {
+    position: relative;
+    height: 100%;
+}
+
+.hero__shape {
+    position: absolute;
+    top: 12px;
+    right: 105px;
+    width: 465px;
+    height: 465px;
+    background: var(--gradient-color);
+    border-radius: 50%;
+}
+
+.hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 60px;
+    position: absolute;
+    top: 86px;
+    right: 5px;
+}
+
+.hero__text {
+    font-weight: var(--font-bold);
+    font-size: var(--biggest-font-size);
+    line-height: 75%;
+    color: var(--white-color);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.hero__text span {
+    color: var(--yellow-color);
+}
+
+.hero__button {
+    background: var(--gradient-color);
+    border-radius: 25px;
+}
 
 /*=============== BACKSTAGE ===============*/
 
