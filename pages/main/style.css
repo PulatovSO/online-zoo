@@ -150,6 +150,154 @@
 }
 
 /*=============== PETS ===============*/
+.pets {
+    padding-top: 40px;
+    padding-bottom: 100px;
+    position: relative;
+    background-image: url(../../assets/images/palm.png), url('../../assets/images/strelitzia.png');
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: left bottom, right bottom;
+}
+
+.pets__container {
+    display: grid;
+    place-items: center;
+}
+
+.pets__button {
+    margin-top: 80px;
+    background-color: var(--orange-color);
+    transition: background .2s ease-in-out;
+    border-radius: 25px;
+}
+
+.pets__bg-img {
+    position: absolute;
+    bottom: 0;
+}
+.pets-bg-left {
+    left: 0;
+}
+.pets-bg-right {
+    right: 0;
+}
+
+.slider {
+    position: relative;
+}
+
+.slider__btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 62px;
+    height: 62px;
+    border: none;
+    outline: none;
+    background: var(--gradient-color);
+    border-radius: 50%;
+}
+
+.btn-prev {
+    left: -82px;
+}
+
+.btn-next {
+    right: -82px;
+}
+
+.slider__btn:active {
+    background: var(--green-color);
+}
+
+.slider__img {
+    position: relative;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    transition: all .2s ease-in-out;
+    z-index: 1;
+}
+
+.slider__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px;
+    column-gap: 20px;
+}
+
+.slider__item {
+    padding: 1px;
+    background: var(--gradient-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.slider__wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 5px;
+    background-color: var(--white-color);
+    transition: background .2s ease-in-out;
+}
+
+.slider__content {
+    position: relative;
+    padding-left: 16px;
+    padding-bottom: 16px;
+    background-color: var(--white-color);
+    transition: all .2s ease-in-out;
+    z-index: 2;
+}
+
+.slider__title,
+.slider__subtitle {
+    color: var(--black-color);
+    transition: color .1s ease-in-out;
+}
+
+.slider__title {
+    padding-top: 5px;
+    font-weight: var(--font-medium);
+    font-size: var(--small-font-size);
+    line-height: 140%;
+    text-transform: uppercase;
+}
+
+.slider__subtitle {
+    font-weight: var(--font-light);
+    font-size: var(--smaller-font-size);
+    line-height: 120%;
+}
+
+.slider__icon {
+    position: absolute;
+    top: 50%;
+    right: 13px;
+    transform: translateY(-50%);
+}
+
+.slider__item:hover .slider__img {
+    transform: scale(1.1);
+    opacity: 0.3;
+}
+.slider__item:hover .slider__content {
+    background-color: var(--first-color);
+}
+.slider__item:hover > .slider__wrap {
+    background-color: var(--first-color);
+}
+.slider__item:hover .slider__title,
+.slider__item:hover .slider__subtitle {
+    color: var(--white-color);
+}
 
 /*=============== PICK AND FEED A FRIEND ===============*/
 
