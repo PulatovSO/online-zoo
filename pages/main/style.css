@@ -99,6 +99,55 @@
 }
 
 /*=============== BACKSTAGE ===============*/
+.backstage {
+    padding: 140px 0;
+    position: relative;
+    background-image: url(../../assets/images/flower.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right top;
+}
+
+.backstage__bg-image {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    z-index: -1;
+}
+
+.backstage__container {
+    display: flex;
+}
+
+.backstage__img {
+    width: 609px;
+    height: 403px;
+}
+
+.backstage__content {
+    padding-left: 87px;
+}
+
+.backstage__title {
+    margin-bottom: 20px;
+    font-weight: var(--font-regular);
+    font-size: var(--big-font-size);
+    line-height: 120%;
+}
+
+.backstage__subtitle {
+    margin-top: 54px;
+    margin-bottom: 34px;
+    font-weight: var(--font-regular);
+    font-size: var(--normal-font-size);
+    line-height: 120%;
+}
+
+.backstage__paragraph {
+    font-weight: var(--font-regular);
+    font-size: var(--small-font-size);
+    line-height: 130%;
+}
 
 /*=============== PETS ===============*/
 
