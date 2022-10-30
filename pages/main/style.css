@@ -1,5 +1,50 @@
 
 /*=============== HEADER & NAV ===============*/
+.header {
+    background-color: var(--black-color);
+}
+
+.header__container {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.header__logo-wrap {
+    width: 82px;
+    height: 52px;
+}
+
+.nav {
+    margin-left: 67px;
+}
+
+.nav__list {
+    display: flex;
+    column-gap: 58px;
+}
+
+.nav__item,
+.header__author {
+    font-weight: var(--font-medium);
+    font-size: var(--small-font-size);
+    line-height: 140%;
+    color: var(--white-color);
+    transition: color .2s ease-in-out;
+}
+
+.nav__item:hover,
+.header__author:hover {
+    color: var(--orange-color);
+}
+
+.header__author {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
 
 /*=============== HERO ===============*/
 
