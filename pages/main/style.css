@@ -300,6 +300,124 @@
 }
 
 /*=============== PICK AND FEED A FRIEND ===============*/
+.pick {
+    padding-top: 69px;
+    padding-bottom: 100px;
+    background:
+        linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%),
+        linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%),
+        linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%)
+    ;
+}
+
+.pick__container {
+    padding-top: 41px;
+    padding-bottom: 59px;
+    background: #fdfdff85;
+    backdrop-filter: blur(2px);
+    border-radius: 20px;
+}
+
+.pick__title {
+    font-weight: var(--font-regular);
+    font-size: var(--big-font-size);
+    line-height: 120%;
+    text-align: center;
+    color: var(--orange-color);
+}
+
+.pick__info {
+    padding-left: 99px;
+}
+
+.pick__subtitle {
+    margin-top: 30px;
+    font-weight: var(--font-regular);
+    font-size: var(--normal-font-size);
+    line-height: 120%;
+}
+
+.pick__paragraph-bold {
+    margin-top: 40px;
+    font-weight: var(--font-medium);
+    font-size: var(--small-font-size);
+    line-height: 130%;
+}
+
+.pick__paragraph,
+.content__card-title {
+    margin-top: 10px;
+    font-weight: var(--font-regular);
+    font-size: var(--small-font-size);
+    line-height: 130%;
+}
+
+.pick__paragraph a {
+    padding-bottom: 3px;
+    border-bottom: 1px solid var(--orange-color);
+}
+
+.content {
+    text-align: center;
+}
+
+.content__title {
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-weight: var(--font-regular);
+    font-size: 36px;
+    line-height: 130%;
+}
+
+.content__cards {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    column-gap: 130px;
+}
+
+.content__card {
+    width: 168px;
+}
+
+.content__card:nth-child(2) .content__card-img::before,
+.content__card:nth-child(3) .content__card-img::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: -99px;
+    transform: translateY(-50%);
+    display: block;
+    width: 69px;
+    height: 35px;
+    background-image: url(../../assets/icons/arrow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.content__card-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 168px;
+    height: 168px;
+    background-color: var(--white-color);
+}
+
+.content__card-title {
+    margin-top: 30px;
+    line-height: 140%;
+    text-align: left;
+}
+
+.content__button {
+    margin: 0 auto;
+    margin-top: 60px;
+    background: var(--gradient-color);
+    border-radius: 25px;
+}
 
 /*=============== TESTIMONIALS ===============*/
 
