@@ -111,7 +111,7 @@ button {
 
 /* active link */
 .active-link {
-  color: var(--orange-color);
+  color: var(--orange-color) !important;
 }
 
 /*=============== HEADER & NAV ===============*/
@@ -260,7 +260,7 @@ button {
   font-weight: var(--font-regular);
   font-size: var(--small-font-size);
   line-height: 140%;
-  color: #BDBDBD;
+  color: var(--text-color-light);
   background-color: transparent;
   border: 1px solid var(--orange-color);
   outline: none;
@@ -290,4 +290,16 @@ button {
 .form__button:hover {
   color: var(--green-color);
   border: 1px solid var(--green-color);
+}
+
+.input-mistake {
+  border: 1px solid red;
+}
+
+.input-mistake::placeholder {
+  color: red;
+}
+
+.input-mistake:focus::placeholder {
+  color: var(--text-color-light);
 }
