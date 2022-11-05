@@ -627,7 +627,6 @@ input[type="range"]:focus::-webkit-slider-thumb {
     background-color: var(--green-color);
 }
 
-
 .footer__copyright {
     align-self: flex-end;
 }

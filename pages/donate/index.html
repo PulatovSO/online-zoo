@@ -1,12 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate</title>
-</head>
-<body>
-    
-</body>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="../../assets/styles/main.css">
+        <link rel="stylesheet" href="../../assets/styles/normalize.css">
+
+        <!--=============== BOXICONS ===============-->
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Donate</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <div class="header__container container">
+                <a href="./index.html" class="header__logo-wrap">
+                    <h1 class="visually-hidden">Petstory online</h1>
+                    <img src="../../assets/images/logo.png" alt="logo image" class="header__logo">
+                </a>
+
+                <nav class="header__nav nav">
+                    <ul class="nav__list">
+                        <li class="nav__item active-link">
+                            <a href="#" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Map</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Zoos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="./pages/donate/index.html" class="nav__link">Donate</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Contact us</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks?node-id=0%3A1" class="header__author" target="_blank">Designed by ©</a>
+            </div>
+        </header>
+
+        <!--==================== MAIN ====================-->
+        <main class="main">
+            <!--==================== HERO ====================-->
+            <section class="hero section" id="hero">
+                <div class="hero__container container"></div>
+            </section>
+
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__column">
+                    <a href="./index.html">
+                        <img src="../../assets/images/logo.png" alt="footer logo" class="footer__logo">
+                    </a>
+                    <a href="./index.html" class="footer__button button">donate for volunteers</a>
+
+                    <ul class="footer__socials">
+                        <li class="footer__social">
+                            <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
+                                <i class='bx bxl-facebook'></i>
+                                Facebook
+                            </a>
+                        </li>
+                        <li class="footer__social">
+                            <a href="https://www.twitter.com/" target="_blank" class="footer__social-link">
+                                <i class='bx bxl-twitter' ></i>
+                                Twitter
+                            </a>
+                        </li>
+                        <li class="footer__social">
+                            <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
+                                <i class='bx bxl-instagram' ></i>
+                                Instagram
+                            </a>
+                        </li>
+                        <li class="footer__social">
+                            <a href="https://www.youtube.com/" target="_blank" class="footer__social-link">
+                                <i class='bx bxl-youtube' ></i>
+                                Youtube
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <ul class="footer__nav-list nav__list">
+                        <li class="footer__nav-item nav__item active-link">
+                            <a href="#" class="nav__link">About</a>
+                        </li>
+                        <li class="footer__nav-item nav__item">
+                            <a href="#" class="nav__link">Map</a>
+                        </li>
+                        <li class="footer__nav-item nav__item">
+                            <a href="#" class="nav__link">Zoos</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__column">
+                    <form class="footer__form form">
+                        <h3 class="form__title">Subscribe to our news</h3>
+                        <input class="form__input" type="email" placeholder="Enter your email" required>
+                        <button class="form__button">Submit</button>
+                    </form>
+
+                    <div class="footer__copyright">
+                        <p>Designed by Alisa Samborskaya</p>
+                        <p>©RSSchool & ©Yem Digital 2021</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!--=============== JS ===============-->
+        <script src="./script.js"></script>
+    </body>
 </html>
