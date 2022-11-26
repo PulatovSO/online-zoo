@@ -133,11 +133,13 @@ button {
 
 .nav {
   margin-left: 67px;
+  transition: all .2s ease-in-out;
 }
 
 .nav__list {
   display: flex;
   column-gap: 58px;
+  transition: all .2s ease-in-out;
 }
 
 .nav__item,
@@ -302,4 +304,292 @@ button {
 
 .input-mistake:focus::placeholder {
   color: var(--text-color-light);
+}
+
+
+/*=============== MEDIA QUERIES ===============*/
+
+/* Large devices */
+@media screen and (max-width: 1300px) {
+  .hero {
+    background-position: -50px -82px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .hero {
+    background-position: -120px -82px;
+  }
+
+  .header__container {
+    padding: 0 30px;
+  }
+
+  .hero__content {
+    top: 100px;
+    right: 48px;
+    row-gap: 130px;
+  }
+
+  .hero__text {
+    font-weight: var(--font-bold);
+    font-size: 85px;
+  }
+}
+
+
+@media screen and (max-width: 1100px) {
+  .hero__shape {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 1040px) {
+  .hero {
+    background-position: -150px -82px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    width: 100%;
+    position: absolute;
+    z-index: 10;
+  }
+  .nav__list {
+    column-gap: 48px;
+  }
+  .header__author {
+    right: 30px;
+  }
+
+
+  .hero {
+    max-height: 584px;
+    background-image: url('../images/hero-large.jpg');
+    background-position: center bottom;
+    outline: 1px solid red;
+  }
+  .hero__shape {
+    top: 68px;
+    right: 173px;
+    width: 367px;
+    height: 367px;
+    z-index: 0;
+  }
+  .hero__content {
+    top: 121px;
+    right: 96px;
+    row-gap: 43px;
+  }
+  .hero__text {
+    font-weight: var(--font-bold);
+    font-size: 85px;
+  }
+}
+
+/* Tablets */
+@media screen and (max-width: 920px) {
+  .hero__shape {
+    width: 325px;
+    height: 325px;
+    right: 110px;
+  }
+  .hero__content {
+    right: 38px;
+    row-gap: 82px;
+  }
+  .hero__text {
+    font-size: 75px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .nav__list {
+    column-gap: 30px;
+  }
+}
+
+
+/* Mobile devices */
+@media screen and (max-width: 767px) {
+  .hero {
+    height: 500px;
+  }
+  .hero__shape {
+    width: 300px;
+    height: 300px;
+    right: 88px;
+  }
+  .hero__content {
+    right: 20px;
+    row-gap: 43px;
+  }
+  .hero__text {
+    font-size: 68px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .nav {
+    margin-left: 25px;
+  }
+  .nav__list {
+    column-gap: 25px;
+  }
+
+  .hero {
+    height: 470px;
+  }
+  .hero__shape {
+    width: 250px;
+    height: 250px;
+    top: 90px;
+    right: 88px;
+  }
+  .hero__text {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+  .header__container {
+    padding: 0 20px;
+    height: 34px;
+  }
+  .header__logo-wrap {
+    width: 46px;
+    height: 29px;
+  }
+  .nav,
+  .header__author {
+    display: none;
+  }
+  .header__menu-btn {
+    position: absolute;
+    right: 20px;
+    width: 18px;
+    height: 10px;
+    border: none;
+    background: transparent;
+    background-image: url('../images/menu.png');
+  }
+
+
+  .hero {
+    height: 373px;
+    background-position: 0 0;
+  }
+  .hero__shape {
+    top: 44px;
+    right: 67px;
+    width: 237px;
+    height: 237px;
+  }
+  .hero__content {
+    position: static;
+  }
+  .hero__text {
+    position: absolute;
+    top: 84px;
+    right: 17px;
+    font-size: 54px;
+  }
+  .hero__button {
+    position: absolute;
+    left: 20px;
+    bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 578px) {
+  .hero {
+    height: 300px;
+  }
+  .hero__shape {
+    width: 200px;
+    height: 200px;
+  }
+  .hero__text {
+    font-size: 40px;
+    right: 40px;
+  }
+  .hero__button {
+    bottom: 12px;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .hero__button {
+    left: 50%;
+    bottom: -75px;
+    transform: translateX(-50%);
+  }
+}
+
+@media screen and (max-width: 486px) {
+  .hero {
+    height: 284px;
+  }
+  .hero__shape {
+    width: 150px;
+    height: 150px;
+  }
+  .hero__text {
+    top: 76px;
+    right: 34px;
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .hero {
+    height: 250px;
+  }
+  .hero__shape {
+    top: 56px;
+    right: 36px;
+    width: 119px;
+    height: 119px;
+  }
+  .hero__text {
+    top: 75px;
+    right: 9px;
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero {
+    height: 230px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .hero {
+    height: 219px;
+    background-size: contain;
+    background-position: center 34px;
+  }
+  .hero__shape {
+    top: 56px;
+    right: 36px;
+    width: 119px;
+    height: 119px;
+  }
+  .hero__text {
+    top: 75px;
+    right: 9px;
+    font-size: 28px;
+  }
+  .hero__button {
+    bottom: -74px;
+  }
 }

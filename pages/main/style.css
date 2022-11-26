@@ -6,6 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 -82px;
+    transition: background-position .5s ease-in-out;
 }
 
 .hero__container {
@@ -21,6 +22,7 @@
     height: 465px;
     background: var(--gradient-color);
     border-radius: 50%;
+    transition: all .2s ease-in-out;
 }
 
 .hero__content {
@@ -40,6 +42,7 @@
     color: var(--white-color);
     text-align: center;
     text-transform: uppercase;
+    transition: all .2s ease-in-out;
 }
 
 .hero__text span {
