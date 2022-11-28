@@ -6,11 +6,16 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 0 -82px;
+    transition: background-position .5s ease-in-out;
 }
 
 .hero__container {
     position: relative;
     height: 100%;
+}
+
+.logo__mobile {
+    display: none;
 }
 
 .hero__shape {
@@ -21,6 +26,7 @@
     height: 465px;
     background: var(--gradient-color);
     border-radius: 50%;
+    transition: all .2s ease-in-out;
 }
 
 .hero__content {
@@ -40,6 +46,7 @@
     color: var(--white-color);
     text-align: center;
     text-transform: uppercase;
+    transition: all .2s ease-in-out;
 }
 
 .hero__text span {
@@ -75,10 +82,12 @@
 .backstage__img {
     width: 609px;
     height: 403px;
+    transition: all .2s ease-in-out;
 }
 
 .backstage__content {
     padding-left: 87px;
+    transition: all .2s ease-in-out;
 }
 
 .backstage__title {
@@ -107,7 +116,7 @@
     padding-top: 40px;
     padding-bottom: 100px;
     position: relative;
-    background-image: url(../../assets/images/palm.png), url('../../assets/images/strelitzia.png');
+    background-image: url('../../assets/images/palm.png'), url('../../assets/images/strelitzia.png');
     background-repeat: no-repeat;
     background-size: auto;
     background-position: left bottom, right bottom;
@@ -358,6 +367,8 @@
     width: 168px;
     height: 168px;
     background-color: var(--white-color);
+    border: 1px solid var(--orange-color);
+    border-radius: 5px;
 }
 
 .content__card-title {
@@ -468,6 +479,7 @@
 .testimonials__button {
     margin-top: 24px;
     background: var(--gradient-color);
+    transition: width .2s ease-in-out;
 }
 
 .testimonials__progress {
