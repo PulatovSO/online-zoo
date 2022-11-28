@@ -363,6 +363,8 @@
     width: 168px;
     height: 168px;
     background-color: var(--white-color);
+    border: 1px solid var(--orange-color);
+    border-radius: 5px;
 }
 
 .content__card-title {

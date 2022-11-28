@@ -392,6 +392,14 @@ button {
     width: 295px;
     height: 357px;
   }
+
+
+  .pick__container {
+    margin: 0 30px;
+  }
+  .pick__paragraph-bold {
+    max-width: 813px;
+  }
 }
 
 
@@ -406,6 +414,10 @@ button {
   .backstage__img {
     width: 455px;
     height: 408px;
+  }
+
+  .pick__info {
+    padding-left: 49px;
   }
 }
 
@@ -467,6 +479,13 @@ button {
   .backstage {
     padding: 108px 0;
   }
+
+  .pick__container {
+    padding: 41px 30px 59px 30px;
+  }
+  .pick__paragraph {
+    max-width: 823px;
+  }
 }
 
 @media screen and (max-width: 998px) {
@@ -497,6 +516,20 @@ button {
   }
   .hero__text {
     font-size: 75px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .content__cards {
+    column-gap: 42px;
+  }
+  .content__card:nth-child(2) .content__card-img::before,
+  .content__card:nth-child(3) .content__card-img::before {
+      top: -3px;
+      left: -94px;
+      width: 110px;
+      height: 35px;
+      background-image: url('../icons/green-arrow.png');
   }
 }
 
@@ -569,6 +602,18 @@ button {
   }
   .hero__text {
     font-size: 68px;
+  }
+
+  .pick {
+    padding: 20px 0;
+  }
+  .pick__container {
+    margin: 0;
+    padding-top: 10px !important;
+    padding-bottom: 60px !important;
+  }
+  .pick__info {
+    padding-left: 0;
   }
 }
 
@@ -671,6 +716,30 @@ button {
   .slider__btn {
     display: none;
   }
+
+  .content__cards {
+    flex-direction: column;
+    align-items: center;
+    row-gap: 74px;
+  }
+  .content__card {
+    position: relative;
+  }
+  .content__card:nth-child(2) .content__card-img::before,
+  .content__card:nth-child(3) .content__card-img::before {
+      top: -55px;
+      left: 85%;
+      width: 85px;
+      transform: rotate(83deg);
+      background-size: contain;
+  }
+  .content__card-title {
+    margin-top: 10px;
+    position: absolute;
+  }
+  .content__button {
+    margin-top: 99px;
+  }
 }
 
 @media screen and (max-width: 620px) {
@@ -730,6 +799,10 @@ button {
     width: 298px;
     height: 54px;
   }
+
+  .pick__title {
+    font-size: 34px;
+  }
 }
 
 @media screen and (max-width: 486px) {
@@ -768,6 +841,22 @@ button {
   .hero {
     height: 230px;
   }
+
+  .content__title {
+    margin: 20px 0;
+  }
+  .pick__subtitle {
+    text-align: center;
+  }
+  .pick__info p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .pick__title {
+    font-size: var(--normal-font-size);
+  }
 }
 
 @media screen and (max-width: 320px) {
@@ -793,5 +882,19 @@ button {
 
   .backstage__title {
     font-size: 24px;
+  }
+
+  .pick__container {
+    margin: 20px 10px;
+    padding: 0 10px;
+    padding-bottom: 40px !important;
+  }
+  .pick__subtitle {
+    font-size: 18px;
+  }
+  .content__button {
+    margin-top: 93px;
+    position: relative;
+    transform: translateX(-9px);
   }
 }
