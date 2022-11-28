@@ -363,11 +363,12 @@ button {
 }
 
 @media screen and (max-width: 1200px) {
+  .container {
+    padding: 0 30px;
+  }
+
   .hero {
     background-position: -120px -82px;
-  }
-  .header__container {
-    padding: 0 30px;
   }
   .hero__content {
     top: 100px;
@@ -380,9 +381,6 @@ button {
   }
 
 
-  .backstage__container {
-    padding: 0 30px;
-  }
   .backstage__img {
     width: 510px;
     object-fit: cover;
@@ -400,6 +398,15 @@ button {
   .pick__paragraph-bold {
     max-width: 813px;
   }
+
+
+  .testimonials__list {
+    justify-content: center;
+    column-gap: 20px;
+  }
+  .testimonial {
+    width: 250px;
+  }
 }
 
 
@@ -407,6 +414,17 @@ button {
   .hero__shape {
     width: 400px;
     height: 400px;
+  }
+
+  .testimonials__list {
+    justify-content: center;
+    column-gap: 30px;
+  }
+  .testimonials__item:last-child {
+    display: none;
+  }
+  .testimonial {
+    width: 293px;
   }
 }
 
@@ -576,6 +594,38 @@ button {
   .slider__item:nth-child(3),
   .slider__item:nth-child(4) {
     display: none;
+  }
+}
+
+@media screen and (max-width: 844px) {
+  .testimonials {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background-image: url('../images/testimonial-bg.png');
+    background-size: 120px;
+    background-position: right bottom -71px;
+  }
+  .testimonials__title {
+    margin-bottom: 30px;
+  }
+  .testimonials__list {
+    flex-direction: column;
+    row-gap: 15px;
+  }
+  .testimonial {
+    width: 100%;
+    height: 109px;
+  }
+  .testimonial__paragraph {
+    height: 37px;
+    overflow: hidden;
+  }
+  .testimonials__progress {
+    display: none;
+  }
+  .testimonials__button {
+    margin: 0 auto;
+    margin-top: 40px;
   }
 }
 
@@ -835,6 +885,14 @@ button {
     right: 9px;
     font-size: 28px;
   }
+
+  .testimonials {
+    padding-top: 30px;
+    padding-bottom: 60px;
+    background-image: url('../images/testimonial-bg-2.png');
+    background-size: auto;
+    background-position: right bottom -30px;
+  }
 }
 
 @media screen and (max-width: 400px) {
@@ -856,6 +914,13 @@ button {
 @media screen and (max-width: 376px) {
   .pick__title {
     font-size: var(--normal-font-size);
+  }
+}
+
+@media screen and (max-width: 336px) {
+  .testimonials__button {
+    width: 240px;
+    height: 54px;
   }
 }
 

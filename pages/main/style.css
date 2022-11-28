@@ -475,6 +475,7 @@
 .testimonials__button {
     margin-top: 24px;
     background: var(--gradient-color);
+    transition: width .2s ease-in-out;
 }
 
 .testimonials__progress {
