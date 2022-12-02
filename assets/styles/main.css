@@ -131,6 +131,10 @@ button {
   height: 52px;
 }
 
+.logo__mobile {
+  display: none;
+}
+
 .nav {
   margin-left: 67px;
   transition: all .2s ease-in-out;
