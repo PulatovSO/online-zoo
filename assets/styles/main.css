@@ -353,6 +353,9 @@ button {
 }
 
 @media screen and (max-width: 1360px) {
+  .slider {
+    height: 963px;
+  }
   .slider__list {
     row-gap: 100px;
   }
@@ -361,6 +364,13 @@ button {
   }
   .btn-next {
     right: 34%;
+  }
+  .slider__btn {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .slider-btn-none {
+    display: none;
   }
 }
 
@@ -409,6 +419,10 @@ button {
     height: 357px;
   }
 
+  .slider {
+    max-width: 1087px;
+    height: 816px;
+  }
 
   .pick__container {
     margin: 0 30px;
@@ -442,6 +456,14 @@ button {
   }
 }
 
+@media screen and (max-width: 1150px) {
+  .slider {
+    max-width: 941px;
+  }
+  .slider__list-wrap {
+    width: unset;
+  }
+}
 
 @media screen and (max-width: 1100px) {
   .hero__shape {
@@ -552,6 +574,10 @@ button {
     height: 450px;
   }
 
+  .slider {
+    max-width: 805px;
+    height: 730px;
+  }
   .slider__item {
     width: 250px;
     height: 314px;
@@ -623,15 +649,17 @@ button {
     transform: translateX(4px);
   }
 
+  .slider {
+    max-width: 600px;
+    height: 800px;
+  }
   .slider__list {
     grid-template-columns: repeat(2, 1fr);
   }
-
   .slider__item {
     width: 285px;
     height: 348px;
   }
-
   .slider__item:nth-child(3),
   .slider__item:nth-child(4) {
     display: none;
@@ -888,6 +916,15 @@ button {
     background-size: auto, 175px 131px;
     background-position: left -60px bottom, right bottom;
   }
+  .pets-mobile {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    column-gap: 0;
+  }
+  .slider {
+    display: none;
+  }
 
   .footer__column:nth-child(2) {
     left: 21px;
@@ -905,16 +942,6 @@ button {
 }
 
 @media screen and (max-width: 638px) {
-  .slider__list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-    column-gap: 0;
-  }
-  .slider__btn {
-    display: none;
-  }
-
   .content__cards {
     flex-direction: column;
     align-items: center;
@@ -1041,10 +1068,13 @@ button {
 
   .pets {
     padding-top: 0;
-    padding-bottom: 140px;
+    padding-bottom: 0;
     background-image: url('../images/pet-mobile1.png'), url('../images/pet-mobile2.png');
     background-size: auto, 85px 71px;
     background-position: left bottom, right bottom -5px;
+  }
+  .pets__container {
+    padding-bottom: 130px;
   }
   .pets__button {
     position: absolute;
