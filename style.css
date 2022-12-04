@@ -121,6 +121,7 @@
 .pets__container {
     display: grid;
     place-items: center;
+    position: relative;
 }
 
 .pets__button {
@@ -143,7 +144,7 @@
 
 .slider__btn {
     position: absolute;
-    top: 50%;
+    top: 43%;
     transform: translateY(-50%);
     display: inline-flex;
     justify-content: center;
@@ -176,7 +177,7 @@
     position: relative;
     display: flex;
     outline: 3px solid green;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .slider__lists {
@@ -197,17 +198,17 @@
 
 .slide-1 {
     transform: translateX(0);
-    background-color: red;
-    opacity: 0.2;
+    /* background-color: red; */
+    opacity: 0;
 }
 .slide-2 {
     transform: translateX(0);
-    background-color: orange;
+    /* background-color: orange; */
 }
 .slide-3 {
     transform: translateX(0);
-    background-color: blue;
-    opacity: 0.2;
+    /* background-color: blue; */
+    opacity: 0;
 }
 
 .slider__list {
@@ -227,6 +228,7 @@
     border-radius: 5px;
     overflow: hidden;
     height: 426px;
+    transition: all .5s ease-in-out;
 }
 
 .slider__img {
