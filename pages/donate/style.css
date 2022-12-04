@@ -242,6 +242,8 @@
 
 .amount__input-wrap {
     position: relative;
+    width: 270px;
+    margin: 0 auto;
 }
 
 .amount__input {
@@ -279,7 +281,7 @@
 .amount__sign {
     position: absolute;
     top: 15px;
-    left: 61%;
+    right: 15px;
     transform: translateX(5px);
     font-size: 22px;
     font-weight: var(--font-bold);

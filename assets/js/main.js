@@ -116,3 +116,37 @@ function ChangeOpacity(dim1, bright, dim2) {
     bright.style.opacity = '1';
     dim2.style.opacity = '0';
 }
+
+// AMOUNT RADIO
+let radios = document.querySelectorAll('.amount__radio');
+let amount = document.querySelector('.amount__input');
+
+radios.forEach(radio => {
+    radio.addEventListener('click', () => {
+        removeActive()
+        radio.parentElement.classList.add('active-price');
+        amount.value = radio.nextElementSibling.textContent.slice(1);
+    })
+})
+
+amount.addEventListener('input', () => {
+    if (amount.value.length > 4) {
+        amount.value = amount.value.slice(0, 4);
+    }
+
+    removeActive()
+
+    radios.forEach(radio => {
+        if (amount.value == radio.nextElementSibling.textContent.slice(1)) {
+            radio.parentElement.classList.add('active-price')
+        }
+    })
+})
+
+function removeActive () {
+    radios.forEach(radio => {
+        radio.parentElement.classList.remove('active-price');
+    })
+}
+
+
