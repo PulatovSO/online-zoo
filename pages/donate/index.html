@@ -10,12 +10,15 @@
         <link rel="stylesheet" href="./style.css">
         <link rel="stylesheet" href="../../assets/styles/normalize.css">
 
-        <!--=============== BOXICONS ===============-->
+        <!--=============== ICONS ===============-->
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
         <title>Donate</title>
     </head>
-    <body>
+    <body class="body">
+        <div class="bg-layer"></div>
+
         <!--==================== HEADER ====================-->
         <header class="header" id="header">
             <div class="header__container container">
@@ -25,22 +28,31 @@
                     <img src="../../assets/images/logo-outline.png" alt="logo image" class="header__logo logo__mobile">
                 </a>
 
-                <nav class="header__nav nav">
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="../../index.html" class="nav__link">About</a>
+                <nav class="header__nav nav menu">
+                    <a href="../../index.html" class="menu__logo-link">
+                        <img src="../../assets/images/menu-logo.png" alt="logo image" class="menu__logo">
+                    </a>
+                    <button class="menu__close-btn">
+                        <i class="ri-close-line"></i>
+                    </button>
+                    <ul class="nav__list menu__list">
+                        <li class="nav__item menu__item">
+                            <a href="../../index.html" class="nav__link menu__link">About</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Map</a>
+                        <li class="nav__item menu__item">
+                            <a href="#" class="nav__link menu__link">Map</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Zoos</a>
+                        <li class="nav__item menu__item">
+                            <a href="#" class="nav__link menu__link">Zoos</a>
                         </li>
-                        <li class="nav__item active-link">
-                            <a href="./index.html" class="nav__link">Donate</a>
+                        <li class="nav__item menu__item active-link">
+                            <a href="./index.html" class="nav__link menu__link">Donate</a>
                         </li>
-                        <li class="nav__item">
-                            <a href="#" class="nav__link">Contact us</a>
+                        <li class="nav__item menu__item">
+                            <a href="#" class="nav__link menu__link">Contact us</a>
+                        </li>
+                        <li class="nav__item menu__item">
+                            <a href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks?node-id=0%3A1" class="menu__author manu__link" target="_blank">Designed by ©</a>
                         </li>
                     </ul>
                 </nav>
@@ -89,42 +101,42 @@
                             <div class="amount__bg"></div>
                             <ul class="amount__list">
                                 <li class="amount__item">
-                                    <span></span>
+                                    <span class="amount__radio"></span>
                                     <p class="amount__price">$5000</p>
                                 </li>
                                 <li class="amount__item">
-                                    <span></span>
+                                    <span class="amount__radio"></span>
                                     <p class="amount__price">$2000</p>
                                 </li>
-                                <li class="amount__item active-price">
-                                    <span></span>
+                                <li class="amount__item">
+                                    <span class="amount__radio"></span>
                                     <p class="amount__price">$1000</p>
                                 </li>
                                 <li class="amount__item">
-                                    <span></span>
+                                    <span class="amount__radio"></span>
                                     <p class="amount__price">$500</p>
                                 </li>
                                 <li class="amount__item">
-                                    <span></span>
+                                    <span class="amount__radio"></span>
                                     <p class="amount__price">$250</p>
                                 </li>
-                                <li class="amount__item">
-                                    <span></span>
+                                <li class="amount__item active-price">
+                                    <span class="amount__radio"></span>
                                     <p class="amount__price">$100</p>
                                 </li>
                                 <li class="amount__item">
-                                    <span></span>
+                                    <span class="amount__radio"></span>
                                     <p class="amount__price">$50</p>
                                 </li>
                                 <li class="amount__item">
-                                    <span></span>
+                                    <span class="amount__radio"></span>
                                     <p class="amount__price">$25</p>
                                 </li>
                             </ul>
 
                             <div class="amount__inner-block">
                                 <div class="amount__input-wrap">
-                                    <input class="amount__input" type="number" placeholder="Another amount" required>
+                                    <input class="amount__input" type="number" min="1" max="9999" value="100" placeholder="Another amount" required>
                                     <span class="amount__sign">$</span>
                                 </div>
 
@@ -219,6 +231,6 @@
         </footer>
 
         <!--=============== JS ===============-->
-        <script src="./script.js"></script>
+        <script src="../../assets/js/main.js"></script>
     </body>
 </html>

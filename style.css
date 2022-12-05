@@ -121,6 +121,7 @@
 .pets__container {
     display: grid;
     place-items: center;
+    position: relative;
 }
 
 .pets__button {
@@ -141,13 +142,9 @@
     right: 0;
 }
 
-.slider {
-    position: relative;
-}
-
 .slider__btn {
     position: absolute;
-    top: 50%;
+    top: 43%;
     transform: translateY(-50%);
     display: inline-flex;
     justify-content: center;
@@ -158,6 +155,7 @@
     outline: none;
     background: var(--gradient-color);
     border-radius: 50%;
+    z-index: 15;
 }
 
 .btn-prev {
@@ -172,15 +170,37 @@
     background: var(--green-color);
 }
 
-.slider__img {
-    position: relative;
+.slider {
+    max-width: 1160px;
     width: 100%;
-    border-radius: 5px 5px 0 0;
-    transition: all .2s ease-in-out;
-    z-index: 1;
+    height: 876px;
+    position: relative;
+    display: flex;
+    overflow: hidden; 
+}
+
+.slider__lists {
+    display: inline-flex;
+    flex-direction: row;
+    position: relative;
+    transition: all .9s ease-in-out;
+    transform: translateX(-33.3%);
+}
+
+.slider__list-wrap {
+    width: 1158px;
+    position: relative;
+    transition: all .5s ease-in-out;
+    transform: translateX(0);
+}
+
+.slide-1,
+.slide-3 {
+    opacity: 0;
 }
 
 .slider__list {
+    position: relative;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     row-gap: 15px;
@@ -196,6 +216,15 @@
     border-radius: 5px;
     overflow: hidden;
     height: 426px;
+    transition: all .5s ease-in-out;
+}
+
+.slider__img {
+    position: relative;
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+    transition: all .2s ease-in-out;
+    z-index: 1;
 }
 
 .slider__wrap {
@@ -256,6 +285,10 @@
 .slider__item:hover .slider__title,
 .slider__item:hover .slider__subtitle {
     color: var(--white-color);
+}
+
+.pets-mobile {
+    display: none;
 }
 
 /*=============== PICK AND FEED A FRIEND ===============*/
