@@ -382,7 +382,7 @@
     display: block;
     width: 69px;
     height: 35px;
-    background-image: url(../../assets/icons/arrow.png);
+    background-image: url('./assets/icons/arrow.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
